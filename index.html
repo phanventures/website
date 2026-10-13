@@ -8,14 +8,6 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <meta name="theme-color" content="#5B21B6">
-  <!-- Google Analytics (GA4) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HVZ7FG7B8X"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-HVZ7FG7B8X');
-  </script>
   <title>Phan Ventures · Building spaces where you belong.</title>
   <meta name="description" content="Phan Ventures is the portfolio of Anh Phan, a queer Vietnamese-American entrepreneur building community-first businesses in Minnesota.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -596,6 +588,20 @@
 
     .footer-links a:hover { color: rgba(255, 255, 255, 0.9); }
 
+    .footer-links .cookie-link {
+      background: none;
+      border: 0;
+      padding: 0;
+      font: inherit;
+      font-size: 14px;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.74);
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+    .footer-links .cookie-link:hover { color: rgba(255, 255, 255, 0.9); }
+    .footer-links .cookie-link:focus-visible { outline: 2px solid #fff; outline-offset: 3px; border-radius: 2px; }
+
     .footer-copy {
       font-size: 14px;
       color: rgba(255, 255, 255, 0.74);
@@ -616,6 +622,8 @@
       .hero-eyebrow { font-size: 11px; letter-spacing: 0.1em; white-space: normal; line-height: 1.8; }
     }
   </style>
+  <!-- Google Analytics 4, loaded only after the visitor clicks Accept (consent.js). -->
+  <script src="/consent.js" data-ga-id="G-HVZ7FG7B8X" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -866,6 +874,7 @@
         <a href="https://alwaysfunday.com" target="_blank" rel="noopener">Always Funday</a>
         <a href="https://productiveworkflows.com" target="_blank" rel="noopener">Productive Workflows</a>
         <a href="/legal">Legal</a>
+        <button type="button" class="cookie-link" data-pv-cookie-settings hidden>Cookie settings</button>
       </div>
       <div class="footer-copy">&copy; 2026 Phan Ventures LLC</div>
     </div>
