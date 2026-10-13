@@ -14,7 +14,7 @@
 (function () {
   var THEME = {
     font: "'Inter',sans-serif",
-    bg: "rgba(10,10,12,.94)",
+    bg: "#0a0a0c",
     text: "#FFFFFF",
     border: "rgba(255,255,255,.15)",
     link: "#FFFFFF",
