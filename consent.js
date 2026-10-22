@@ -108,7 +108,7 @@
     var p = document.createElement('p');
     p.className = 'pv-consent__text';
     p.appendChild(document.createTextNode(
-      'We use Google Analytics to count visits and see which pages are useful. It only runs if you accept. '));
+      'We use Google Analytics cookies to count visits and see which pages are useful. They’re only set if you accept. '));
     if (PRIVACY) {
       var a = document.createElement('a');
       a.href = PRIVACY;
